@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transition-bottom {
+    transition: bottom 3s ease-in-out;
+}

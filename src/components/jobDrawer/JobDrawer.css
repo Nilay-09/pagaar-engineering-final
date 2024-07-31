@@ -1,0 +1,15 @@
+.scrollbar-hide::-webkit-scrollbar,
+.dashboard::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide,
+body::-webkit-scrollbar  {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+
+.shadow-job-box {
+    box-shadow: 3.11px 3.11px 0 #000;
+  }
