@@ -1,3 +1,4 @@
+import { calculateTimeAgo } from "../GenericComponents/ScrollToTop";
 
 
 
@@ -10,11 +11,12 @@ interface JobCardProps {
   locationIcon: string;
   jobBagIcon: string;
   bookmarkIcon: string;
+  timePosted: string;
   onClick: () => void;
 }
 
 
-const JobCard: React.FC<JobCardProps> = ({ jobTitle, company, location, experience, jobIcon, locationIcon, jobBagIcon, bookmarkIcon,onClick }) => {
+const JobCard: React.FC<JobCardProps> = ({ jobTitle, company, location, experience, jobIcon, locationIcon, jobBagIcon, bookmarkIcon,onClick,timePosted }) => {
   return (
     <div 
     onClick={onClick}
@@ -24,7 +26,7 @@ const JobCard: React.FC<JobCardProps> = ({ jobTitle, company, location, experien
           <img src={jobIcon} alt="" className="w-full h-full object-cover rounded" />
         </div>
         <div className="flex-1 flex flex-col">
-          <span className="poppins-semibold text-[0.875rem] text-[#28293D] leading-5">
+          <span className="ellipsis-multiline-1 poppins-semibold text-[0.875rem] text-[#28293D] leading-5">
             {jobTitle}
           </span>
           <span className="poppins-medium text-[0.75rem] text-[#30283D] leading-[1.125rem]">
@@ -53,7 +55,7 @@ const JobCard: React.FC<JobCardProps> = ({ jobTitle, company, location, experien
             {experience}
           </span>
         </div>
-        <span className="poppins-bold text-[#06C270] text-[12px] leading-[1.125rem]">2 days.</span>
+        <span className="poppins-bold text-[#06C270] text-[12px] leading-[1.125rem]">{calculateTimeAgo(timePosted)}</span>
       </div>
 
       {/* Buttons */}

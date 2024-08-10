@@ -31,8 +31,8 @@ export default function PrivacyPolicy() {
                     <IoChevronBack /> BACK
                 </div>
                 <div className="w-full max-w-[1024px] border rounded-lg border-[#000] min-w-[310px] h-full mt-10 px-8 py-9">
-                    <div className="w-full poppins-600 text-[1.875rem] text-[#141416] tracking-[-2%]">Pagaar Privacy Policy</div>
-                    <div className="w-full mt-4 poppins-400 text-[1rem] text-[#29292C] tracking-[-2%]">
+                    <div className="w-full poppins-semibold text-[1.875rem] text-[#141416] tracking-[-2%]">Pagaar Privacy Policy</div>
+                    <div className="w-full mt-4 poppins-regular text-[1rem] text-[#29292C] tracking-[-2%]">
                         <p>Pagaar.ai (Unbook Solutions Pvt. Ltd.) is a job-listing platform created for the convenience of job-seekers in the IT Sector. Your privacy is of the utmost importance to us. We, at Pagaar.ai are committed to protect the privacy of your personally-identifiable information (PII) as used by you on this website. In furtherance of our commitment to protect your privacy, we share that:</p>
                         <br />
 
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
                         <p className="mt-3">We are bound by the legal regulations applicable within the jurisdiction of India and shall, if required, be legally compelled to share your personal information in response to a court order, subpoena, search warrant, law or regulation.</p>
                     </div>
 
-                    <div className="w-full poppins-400 text-[1rem] leading-6 text-[#29292C] underline flex gap-10 mt-10 poppins-600">
+                    <div className="w-full poppins-regular text-[1rem] leading-6 text-[#29292C] underline flex gap-10 mt-10 poppins-semibold">
                         <NavLink to="/contact-us">
                             <span>Contact us</span>
                         </NavLink>

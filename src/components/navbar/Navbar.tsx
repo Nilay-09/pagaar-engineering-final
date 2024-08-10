@@ -5,18 +5,15 @@ import Cross from "../../assets/dashboard/cross.svg";
 import Coins from "../../assets/dashboard/Coins.svg";
 import Alerts from "../../assets/dashboard/alert.svg";
 
-import TommyVercetti from "../../assets/dashboard/carlo.png";
 
 
 
-import { useLocation } from 'react-router-dom';
 
 import './Navbar.css';
+import ImageIcon from "./ImageIcon";
 
 export default function Navbar() {
 
-  const location = useLocation();
-  const isDashboard = location.pathname === '/dashboard';
 
 
   return (
@@ -30,25 +27,6 @@ export default function Navbar() {
 
             <div className="flex-1 h-full flex justify-end">
               <div className="flex gap-[1.5rem]">
-
-                {/* Searchbar */}
-                <div className={`flex-1 h-full items-center  ${isDashboard ? "hidden" : "flex"}`}>
-                  <div className="hidden lg:w-[360px] h-10 bg-white rounded-lg border-[#000] border-[1px] lg:flex items-center">
-                    {/* Search Icon */}
-                    <img src={Search} alt="" className="ml-[25px]" />
-
-                    {/* Input */}
-                    <input
-                      type="text"
-                      className="flex-1 py-2 px-4 bg-transparent outline-none font-bold text-[#555770] satoshi-variable"
-                      placeholder="Search Company, Job"
-                    />
-
-                    {/* Clear Button */}
-                    <img src={Cross} alt="" className="mr-[10px]" />
-                  </div>
-                </div>
-
 
 
                 <div className="w-[5.75rem] hidden h-[2.5rem] bg-white sm:flex justify-center items-center border-[#28293D] border-[1px] gap-2 rounded-lg satoshi-variable font-bold text-[#555770] ">
@@ -67,13 +45,17 @@ export default function Navbar() {
                 </div>
 
               </div>
+
+
+              {/* Replace this div with image icon menu */}
               <div className="hidden sm:flex w-10 h-[90%] ml-8 rounded-[100%] self-center border-[#28273C] border-[1px] shadow-navbar-icon">
-                <img
-                  src={TommyVercetti}
-                  alt=""
-                  className="w-full h-full rounded-[100%] object-cover"
-                />
+
+                <ImageIcon/>
               </div>
+
+
+
+
             </div>
           </div>
         </div>

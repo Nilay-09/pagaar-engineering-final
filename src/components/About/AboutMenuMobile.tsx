@@ -15,7 +15,7 @@ import X from './MobileAssets/Profile/Twitter.svg'
 import ARROW_RIGHT from './arrow-right.svg';
 
 const menuItems = [
-    { icon: MANAGE_COINS, heading: 'Manage Coins', onClickLink: '/about/manage-coins' },
+    { icon: MANAGE_COINS, heading: 'Manage Coins', onClickLink: '/profile/manage-coins' },
     { icon: SAVED_JOBS, heading: 'Saved Jobs', onClickLink: '/saved-jobs' },
     { icon: ISSUES, heading: 'Have issues? Raise here', onClickLink: '/issues' },
     { icon: PRIVACY_POLICY, heading: 'Privacy Policy', onClickLink: '/privacy-policy' },

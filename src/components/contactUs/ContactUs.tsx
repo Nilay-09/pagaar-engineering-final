@@ -82,19 +82,19 @@ export default function ContactUs() {
                 <div className="w-full max-w-[1024px] border rounded-lg border-[#000] min-w-[310px] h-full mt-10 px-8 py-9">
                     {submitted ? (
                         <div>
-                            <div className="w-full poppins-600 text-[1.875rem] text-[#141416] tracking-[-2%]">Your response has been submitted.</div>
-                            <div className="w-full mt-2 poppins-400 text-[1rem] text-[#29292C] tracking-[-2%]">
+                            <div className="w-full poppins-semibold text-[1.875rem] text-[#141416] tracking-[-2%]">Your response has been submitted.</div>
+                            <div className="w-full mt-2 poppins-regular text-[1rem] text-[#29292C] tracking-[-2%]">
                                 Team Pagaar will reach out to you in the next 24 to 48 hrs.
                             </div>
-                            <button onClick={() => setSubmitted(false)} className="flex w-full h-[3rem] bg-[#141416] justify-center items-center rounded poppins-500 text-white mt-8">
+                            <button onClick={() => setSubmitted(false)} className="flex w-full h-[3rem] bg-[#141416] justify-center items-center rounded poppins-medium text-white mt-8">
                                 Back To Form
                             </button>
-                            <div className="w-full poppins-400 text-[1rem] flex gap-10 mt-6"> <span>About us</span> <span>Privacy Policy</span></div>
+                            <div className="w-full poppins-regular text-[1rem] flex gap-10 mt-6"> <span>About us</span> <span>Privacy Policy</span></div>
                         </div>
                     ) : (
                         <>
-                            <div className="w-full poppins-600 text-[1.875rem] text-[#141416] tracking-[-2%]">Get in touch</div>
-                            <div className="w-full mt-4 poppins-400 text-[1rem] text-[#29292C] tracking-[-2%]">
+                            <div className="w-full poppins-semibold text-[1.875rem] text-[#141416] tracking-[-2%]">Get in touch</div>
+                            <div className="w-full mt-4 poppins-regular text-[1rem] text-[#29292C] tracking-[-2%]">
                                 You can help us with your email and reason for contacting us and someone from Team Pagaar will reach out to you in the next 24 to 48 hrs.
                             </div>
                             <form onSubmit={handleSubmit}>
@@ -104,7 +104,7 @@ export default function ContactUs() {
                                             type="text"
                                             name="firstName"
                                             placeholder="First Name*"
-                                            className="w-full h-[47px] border border-[#42424233] focus:border-[#926CFF] active:border-[#926CFF] rounded px-3 py-4 placeholder:text-[#141416] text-[15px] leading-[22.5px] tracking-[-1%] poppins-400"
+                                            className="w-full h-[47px] border border-[#42424233] focus:border-[#926CFF] active:border-[#926CFF] rounded px-3 py-4 placeholder:text-[#141416] text-[15px] leading-[22.5px] tracking-[-1%] poppins-regular"
                                             value={formData.firstName}
                                             onChange={handleChange}
                                             required
@@ -115,7 +115,7 @@ export default function ContactUs() {
                                             type="email"
                                             name="email"
                                             placeholder="Email*"
-                                            className="w-full h-[47px] border border-[#42424233] focus:border-[#926CFF] active:border-[#926CFF] rounded px-3 py-4 placeholder:text-[#141416] text-[15px] leading-[22.5px] tracking-[-1%] poppins-400"
+                                            className="w-full h-[47px] border border-[#42424233] focus:border-[#926CFF] active:border-[#926CFF] rounded px-3 py-4 placeholder:text-[#141416] text-[15px] leading-[22.5px] tracking-[-1%] poppins-regular"
                                             value={formData.email}
                                             onChange={handleChange}
                                             required
@@ -125,19 +125,19 @@ export default function ContactUs() {
                                         <textarea
                                             name="message"
                                             placeholder="Message*"
-                                            className="w-full resize-none h-[7.875rem] border border-[#42424233] focus:border-[#926CFF] active:border-[#926CFF] rounded px-3 py-4 placeholder:text-[#141416] text-[15px] leading-[22.5px] tracking-[-1%] poppins-400 focus:outline-none focus:ring-1 focus:ring-black"
+                                            className="w-full resize-none h-[7.875rem] border border-[#42424233] focus:border-[#926CFF] active:border-[#926CFF] rounded px-3 py-4 placeholder:text-[#141416] text-[15px] leading-[22.5px] tracking-[-1%] poppins-regular focus:outline-none focus:ring-1 focus:ring-black"
                                             value={formData.message}
                                             onChange={handleChange}
                                             required
                                         />
                                     </div>
-                                    <button type="submit" className="flex w-full h-[3rem] bg-[#141416] justify-center items-center rounded poppins-500 text-white mt-4">
+                                    <button type="submit" className="flex w-full h-[3rem] bg-[#141416] justify-center items-center rounded poppins-medium text-white mt-4">
                                         Send
                                     </button>
                                 </div>
                             </form>
 
-                            <div className="w-full poppins-400 text-[1rem] leading-6 text-[#29292C] underline flex gap-10 mt-10 poppins-600">
+                            <div className="w-full poppins-regular text-[1rem] leading-6 text-[#29292C] underline flex gap-10 mt-10 poppins-semibold">
 
                                 <NavLink to="/about-us">
                                     <span>About us</span>

@@ -38,8 +38,8 @@ export default function AboutUs() {
                 <div className="w-full max-w-[1024px] border rounded-lg border-[#000] min-w-[310px] h-full mt-10 px-8 py-9">
 
                     <>
-                        <div className="w-full poppins-600 text-[1.875rem] text-[#141416] tracking-[-2%]">About us</div>
-                        <div className="w-full mt-4 poppins-400 text-[1rem] text-[#29292C] tracking-[-2%]">
+                        <div className="w-full poppins-semibold text-[1.875rem] text-[#141416] tracking-[-2%]">About us</div>
+                        <div className="w-full mt-4 poppins-regular text-[1rem] text-[#29292C] tracking-[-2%]">
                             Pagaar.ai aims to solve the discovery problem for job seekers in India. If you talk about the job hunt journey in today’s world, we see that each company has partnered with one of the job search platforms. Now if you consider a job seeker, to know about all the openings, they will have to get onboarded to all the job search platforms out there which is practically not possible. Moreover on the other hand, if a job seeker wants to keep track of the company’s career page directly, then that is also not feasible as there are tons of companies and each career page doesn't allow you to set alerts.
                             <br />
                             <br />
@@ -52,7 +52,7 @@ export default function AboutUs() {
 
                         </div>
 
-                        <div className="w-full poppins-400 text-[1rem] leading-6 text-[#29292C] underline flex gap-10 mt-10 poppins-600">
+                        <div className="w-full poppins-regular text-[1rem] leading-6 text-[#29292C] underline flex gap-10 mt-10 poppins-semibold">
 
                             <NavLink to="/contact-us">
                                 <span>Contact us</span>

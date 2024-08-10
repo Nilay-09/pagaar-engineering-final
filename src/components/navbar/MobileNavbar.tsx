@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import BackgroundImage from './BackgroundNav.svg';
+import BackgroundImage from './Nav.svg';
 
 import DEFAULT_HOME from './mobileNavbarAssets/default/home.svg';
 import DEFAULT_ALERTS from './mobileNavbarAssets/default/alert.svg';
@@ -16,16 +16,16 @@ const MobileNavbar = () => {
     const navItems = [
         { defaultImg: DEFAULT_HOME, activeImg: ACTIVE_HOME, label: 'Home', path: '/dashboard' },
         { defaultImg: DEFAULT_ALERTS, activeImg: ACTIVE_ALERTS, label: 'Alerts', path: '/alerts' },
-        { defaultImg: DEFAULT_PROFILE, activeImg: ACTIVE_PROFILE, label: 'Profile', path: '/about' },
+        { defaultImg: DEFAULT_PROFILE, activeImg: ACTIVE_PROFILE, label: 'Profile', path: '/profile' },
     ];
     const positions = ['left-4', 'left-1/2 transform -translate-x-1/2', 'right-4'];
 
-    if (pathname.includes('/jobs') && pathname === '/jobs') {
+    if (![ '/dashboard', '/alerts', '/profile' ].includes(pathname)) {
         return null;
     }
 
     return (
-        <div className="fixed sm:hidden bottom-0 w-full h-[140px] flex z-10 px-8 justify-between">
+        <div className="fixed sm:hidden -bottom-1  w-full h-[140px] flex z-10 px-8 justify-between">
             <img src={BackgroundImage} alt="" className='absolute w-full h-full inset-0 object-cover' />
             {navItems.map((item, index) => (
                 <NavLink
